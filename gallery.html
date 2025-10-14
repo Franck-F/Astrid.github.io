@@ -1,32 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery - Princess Astrid</title>
+    <title>Galerie - Princesse Astrid</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Gallery of the Westlands</h1>
+            <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Ouvrir le menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <h1>Galerie des Terres de l’Ouest</h1>
         </header>
-        <nav>
+        <nav id="nav-menu">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="stories.html">Chronicles</a></li>
-                <li><a href="contact.html">Send a Missive</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="gallery.html">Galerie</a></li>
+                <li><a href="stories.html">Chroniques</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <main>
             <div class="gallery">
-                <img src="https://picsum.photos/seed/sword/400/300" alt="Enchanted Sword">
-                <img src="https://picsum.photos/seed/battle/400/300" alt="Epic Battle">
-                <img src="https://picsum.photos/seed/magic/400/300" alt="Ancient Magic">
-                <img src="https://picsum.photos/seed/kingdom2/400/300" alt="The Westlands Kingdom">
-                <img src="https://picsum.photos/seed/armor/400/300" alt="Astrid's Armor">
-                <img src="https://picsum.photos/seed/spell/400/300" alt="A Powerful Spell">
+                <img src="https://picsum.photos/seed/sword/400/300" alt="Épée enchantée">
+                <img src="https://picsum.photos/seed/battle/400/300" alt="Bataille épique">
+                <img src="https://picsum.photos/seed/magic/400/300" alt="Magie ancienne">
+                <img src="https://picsum.photos/seed/kingdom2/400/300" alt="Royaume des Terres de l’Ouest">
+                <img src="https://picsum.photos/seed/armor/400/300" alt="Armure d’Astrid">
+                <img src="https://picsum.photos/seed/spell/400/300" alt="Sort puissant">
             </div>
         </main>
     </div>
