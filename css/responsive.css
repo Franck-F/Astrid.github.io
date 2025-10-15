@@ -11,6 +11,23 @@
     z-index: 1000;
 }
 
+.nav-icon {
+    position: absolute;
+    top: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--accent);
+    font-size: 20px;
+    opacity: 0.85;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-toggle.active .nav-icon {
+    transform: translateX(-50%) rotate(360deg);
+    color: var(--accent);
+    opacity: 1;
+}
+
 .bar {
     display: block;
     width: 25px;
