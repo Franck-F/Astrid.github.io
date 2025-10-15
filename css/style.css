@@ -140,10 +140,74 @@ main p {
     50% { opacity: 1; }
 }
 
+/* Style des chroniques */
+.stories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.story-card {
+    background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 12px;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.story-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,.2);
+}
+
+.story-card h3 {
+    margin-top: 0;
+    color: var(--accent);
+    font-size: 1.3rem;
+    position: relative;
+    padding-right: 2rem;
+}
+
+.story-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    opacity: 0;
+}
+
+.story-card.active .story-content {
+    max-height: 1000px;
+    opacity: 1;
+    transition: max-height 0.5s ease, opacity 0.3s ease 0.2s;
+}
+
+.story-card h3::after {
+    content: '+';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: var(--accent);
+    transition: transform 0.3s ease;
+}
+
+.story-card.active h3::after {
+    transform: translateY(-50%) rotate(45deg);
+}
+
 /* Petites tailles */
 @media (max-width: 640px) {
-  nav ul { gap: 6px; padding: 8px 10px; }
-  nav a { padding: 6px 10px; font-size: .9rem; }
+    nav ul { gap: 6px; padding: 8px 10px; }
+    nav a { padding: 6px 10px; font-size: .9rem; }
+    .stories-grid {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
 }
 @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=Raleway:wght@400;700&display=swap');
 
