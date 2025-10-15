@@ -34,10 +34,38 @@
         </nav>
         <main>
             <div class="stories-grid">
-                <div class="story-card">
+                <div class="story-card" data-story="foret-noire">
                     <h3>L'Ombre de la Forêt Noire</h3>
-                    <div class="story-content">
-                        <p>Quand une lèpre rampante commença à dévorer la Forêt Noire, Astrid n'hésita pas. L'épée ancestrale à la main, Porte-Lumière, elle s'enfonça jusqu'au cœur corrompu des bois. Là, elle ne combattit point une bête, mais l'incarnation du désespoir. Alliant la maîtrise martiale à une magie purificatrice, elle apaisa la forêt et l'esprit qui la gardait, rappelant à tous que même la nuit la plus profonde cède sous la résolution d'une guerrière et la grâce d'une enchanteresse.</p>
+                    <div class="story-preview">
+                        Quand une lèpre rampante commença à dévorer la Forêt Noire, Astrid n'hésita pas...
+                    </div>
+                </div>
+                
+                <div class="story-card" data-story="roi-montagne">
+                    <h3>Le Cœur d'Or du Roi de la Montagne</h3>
+                    <div class="story-preview">
+                        Le Roi de la Montagne, dont le cœur s'était fait pierre sous l'avidité, avait asservi son propre peuple...
+                    </div>
+                </div>
+
+                <div class="story-card" data-story="rencontre">
+                    <h3>La Rencontre des Destins</h3>
+                    <div class="story-preview">
+                        Sous les étoiles des Sept Royaumes, une légende d'amour et de bravoure prit naissance...
+                    </div>
+                </div>
+
+                <div class="story-card" data-story="presque-charmant">
+                    <h3>Le Prince Presque Charmant</h3>
+                    <div class="story-preview">
+                        Dans les Sept Royaumes, Franck le Conquérant portait bien des titres, mais celui de "Prince Charmant" n'en faisait point partie...
+                    </div>
+                </div>
+
+                <div class="story-card" data-story="confidences">
+                    <h3>Le Temps des Confidences</h3>
+                    <div class="story-preview">
+                        La princesse Astrid, ayant subi par le passé une déception amoureuse, n'était pas aussi enthousiaste que le prince...
                     </div>
                 </div>
 
@@ -71,6 +99,62 @@
                         <p>La princesse Astrid, ayant subi par le passé une déception amoureuse, n'était pas aussi enthousiaste que le prince à l'idée d'unir leurs deux cœurs. Elle se laissait le temps de mieux connaître qui était ce prince conquérant à l'allure sans pareil, dont la renommée était aussi infinie que l'univers.</p>
                         <p>Cette réserve n'était point un rejet, mais la sagesse d'un cœur qui avait appris que l'amour véritable se construit sur des fondations solides. Chaque conversation partagée, chaque regard échangé devenait une pierre dans l'édifice de leur relation naissante. Le prince, habitué aux victoires rapides, découvrait la beauté d'une conquête lente et délicate, où la patience devenait une forme de dévotion.</p>
                     </div>
+                </div>
+            </div>
+
+            <!-- Modals pour chaque histoire -->
+            <!-- Modals pour toutes les histoires -->
+            <div class="story-modal" id="modal-foret-noire">
+                <div class="modal-content">
+                    <button class="modal-close" aria-label="Fermer">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <h3>L'Ombre de la Forêt Noire</h3>
+                    <p>Quand une lèpre rampante commença à dévorer la Forêt Noire, Astrid n'hésita pas. L'épée ancestrale à la main, Porte-Lumière, elle s'enfonça jusqu'au cœur corrompu des bois. Là, elle ne combattit point une bête, mais l'incarnation du désespoir. Alliant la maîtrise martiale à une magie purificatrice, elle apaisa la forêt et l'esprit qui la gardait, rappelant à tous que même la nuit la plus profonde cède sous la résolution d'une guerrière et la grâce d'une enchanteresse.</p>
+                </div>
+            </div>
+
+            <div class="story-modal" id="modal-roi-montagne">
+                <div class="modal-content">
+                    <button class="modal-close" aria-label="Fermer">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <h3>Le Cœur d'Or du Roi de la Montagne</h3>
+                    <p>Le Roi de la Montagne, dont le cœur s'était fait pierre sous l'avidité, avait asservi son propre peuple. Entendant dans le vent leurs muets appels, Astrid gagna sa forteresse, creusée au plus profond de la terre. Elle ne vint point pour la guerre, mais pour offrir un choix. Elle lui montra la vision de son avenir solitaire : un roi d'or et de poussière. Touché par sa sagesse et la force de son empathie, le cœur du roi s'adoucit, et il apprit que la vraie richesse ne gît pas dans l'or, mais dans la fidélité et l'amour de son peuple.</p>
+                </div>
+            </div>
+
+            <div class="story-modal" id="modal-rencontre">
+                <div class="modal-content">
+                    <button class="modal-close" aria-label="Fermer">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <h3>La Rencontre des Destins</h3>
+                    <p>Sous les étoiles des Sept Royaumes, une légende d'amour et de bravoure prit naissance. Franck le Conquérant, maître des Sept Royaumes, dont les exploits résonnaient déjà dans les chants des bardes, croisa le chemin d'Astrid lors d'un conseil des royaumes. Là où d'autres ne voyaient qu'une princesse, il reconnut une égale, une âme forgée dans le même acier que la sienne. Leur première danse fut un duel d'esprit, leurs premiers mots un tournoi de sagesse.</p>
+                    <p>Ensemble, ils affrontèrent les périls que ni l'un ni l'autre n'aurait pu vaincre seul. Franck apporta sa force et sa détermination inébranlable, Astrid sa grâce et sa magie ancestrale. Dans les salles du pouvoir comme sur les champs de bataille, leur union devint le symbole d'un nouvel âge, où la puissance s'alliait à la sagesse, où l'amour transcendait les frontières des royaumes. Le conquérant des Sept Royaumes découvrit que la plus belle des conquêtes n'était pas celle des terres, mais celle du cœur d'une princesse guerrière.</p>
+                </div>
+            </div>
+
+            <div class="story-modal" id="modal-presque-charmant">
+                <div class="modal-content">
+                    <button class="modal-close" aria-label="Fermer">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <h3>Le Prince Presque Charmant</h3>
+                    <p>Dans les Sept Royaumes, Franck le Conquérant portait bien des titres, mais celui de "Prince Charmant" n'en faisait point partie. Redoutable stratège, guerrier inégalé, sa réputation le précédait comme une ombre imposante. Pourtant, quand ses yeux se posèrent pour la première fois sur la Princesse Astrid, quelque chose en lui changea. Ce ne fut pas un coup de foudre conventionnel - Franck n'avait jamais rien fait de conventionnel - mais plutôt une reconnaissance, comme si son âme avait trouvé son reflet dans un miroir qu'il n'avait jamais su chercher.</p>
+                    <p>Les rumeurs parlaient d'une princesse différente, une guerrière-enchanteresse qui préférait l'éclat des épées aux bals de la cour. Franck, qui avait toujours considéré l'amour comme une faiblesse indigne d'un conquérant, se surprit à chercher sa présence dans chaque conseil, à guetter son rire dans chaque salle. Il tentait maladroitement de l'impressionner, non par des poèmes ou des fleurs, mais par des récits de batailles et des discussions de stratégie qui se transformaient invariablement en joutes verbales enflammées.</p>
+                    <p>Un soir, alors qu'ils contemplaient ensemble les étoiles depuis les remparts, Franck réalisa que ses conquêtes passées paraissaient bien pâles comparées au défi de gagner le cœur d'Astrid. Car elle ne demandait pas un prince charmant aux manières parfaites, mais un égal, quelqu'un qui la comprendrait et l'accepterait dans toute sa complexité. Et peut-être, songea-t-il en la regardant tracer du doigt les constellations, être "presque charmant" était exactement ce qu'il fallait être pour une princesse qui était bien plus qu'une simple princesse.</p>
+                </div>
+            </div>
+
+            <div class="story-modal" id="modal-confidences">
+                <div class="modal-content">
+                    <button class="modal-close" aria-label="Fermer">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <h3>Le Temps des Confidences</h3>
+                    <p>La princesse Astrid, ayant subi par le passé une déception amoureuse, n'était pas aussi enthousiaste que le prince à l'idée d'unir leurs deux cœurs. Elle se laissait le temps de mieux connaître qui était ce prince conquérant à l'allure sans pareil, dont la renommée était aussi infinie que l'univers.</p>
+                    <p>Cette réserve n'était point un rejet, mais la sagesse d'un cœur qui avait appris que l'amour véritable se construit sur des fondations solides. Chaque conversation partagée, chaque regard échangé devenait une pierre dans l'édifice de leur relation naissante. Le prince, habitué aux victoires rapides, découvrait la beauté d'une conquête lente et délicate, où la patience devenait une forme de dévotion.</p>
                 </div>
             </div>
         </main>
