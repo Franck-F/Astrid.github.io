@@ -126,6 +126,42 @@
         font-size: 1rem;
         margin-top: 20px;
     }
+
+    /* Ajustements pour les chroniques sur mobile */
+    .modal-content {
+        padding: 1.5rem;
+        width: 95%;
+    }
+    .modal-content h3 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+    .modal-content p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+}
+
+/* Pour les très petits écrans */
+@media screen and (max-width: 480px) {
+    .stories-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+        padding: 0.75rem;
+    }
+    .story-card {
+        height: 160px;
+        padding: 0.875rem;
+    }
+    .story-card h3 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    .story-preview {
+        font-size: 0.8rem;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+    }
 }
 
 /* Overlay pour le menu mobile */
