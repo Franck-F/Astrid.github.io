@@ -141,11 +141,43 @@ main p {
 }
 
 /* Style des chroniques */
+.tome-section {
+    margin-bottom: 4rem;
+    padding: 2rem;
+    background: linear-gradient(180deg, rgba(255,255,255,.02), transparent);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,.06);
+}
+
+.tome-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.tome-header h2 {
+    font-family: "Cinzel", "Cormorant Garamond", Georgia, serif;
+    font-size: 2rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,.2);
+}
+
+.tome-description {
+    color: var(--muted);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    font-style: italic;
+}
+
 .stories-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 .story-card {
