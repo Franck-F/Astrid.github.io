@@ -144,7 +144,17 @@
 
 /* Pour les très petits écrans */
 @media screen and (max-width: 480px) {
-    .tome-section {
+    .tomes-grid {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .tome-card {
+        padding: 1.5rem;
+    }
+
+    .tome-content {
         padding: 1rem;
         margin-bottom: 2rem;
     }

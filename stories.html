@@ -12,6 +12,7 @@
     <script src="js/menu.js" defer></script>
     <script src="js/stars.js" defer></script>
     <script src="js/stories.js" defer></script>
+    <script src="js/tomes.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -33,7 +34,23 @@
             </ul>
         </nav>
         <main>
-            <section class="tome-section" id="tome1">
+            <div class="tomes-grid">
+                <div class="tome-card" data-tome="tome1">
+                    <h2>Tome 1 : L'Éveil des Sentiments</h2>
+                    <p class="tome-description">Les premières chroniques relatant la rencontre entre la princesse Astrid et Franck le Conquérant, leurs aventures initiales et l'éclosion de leurs sentiments.</p>
+                    <div class="tome-preview">7 Chroniques</div>
+                </div>
+                <div class="tome-card" data-tome="tome2">
+                    <h2>Tome 2 : Les Épreuves du Cœur</h2>
+                    <p class="tome-description">La suite des chroniques explore les défis, les doutes et les victoires qui forgent une histoire d'amour légendaire entre deux âmes destinées à se rencontrer.</p>
+                    <div class="tome-preview">Nouvelles chroniques à venir</div>
+                </div>
+            </div>
+
+            <section class="tome-content" id="tome1-content">
+                <button class="back-to-tomes" aria-label="Retour aux tomes">
+                    <i class="fas fa-arrow-left"></i> Retour aux Tomes
+                </button>
                 <div class="tome-header">
                     <h2>Tome 1 : L'Éveil des Sentiments</h2>
                     <p class="tome-description">Les premières chroniques relatant la rencontre entre la princesse Astrid et Franck le Conquérant, leurs aventures initiales et l'éclosion de leurs sentiments.</p>
@@ -92,7 +109,13 @@
                 </div>
             </section>
 
-            <section class="tome-section" id="tome2">
+                </div>
+            </section>
+
+            <section class="tome-content" id="tome2-content">
+                <button class="back-to-tomes" aria-label="Retour aux tomes">
+                    <i class="fas fa-arrow-left"></i> Retour aux Tomes
+                </button>
                 <div class="tome-header">
                     <h2>Tome 2 : Les Épreuves du Cœur</h2>
                     <p class="tome-description">La suite des chroniques explore les défis, les doutes et les victoires qui forgent une histoire d'amour légendaire entre deux âmes destinées à se rencontrer.</p>
